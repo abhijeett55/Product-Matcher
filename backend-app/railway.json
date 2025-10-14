@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "railway/rust",
+    "buildCommand": "cd backend-app && cargo build --release",
+    "startCommand": "cd backend-app && ./target/release/backend-app"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
