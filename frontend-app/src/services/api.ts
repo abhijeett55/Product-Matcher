@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Product, SearchResponse, ApiResponse, SearchRequest } from '../types/product';
 
-const API_BASE_URL = 'http://localhost:5000/api'|| 'https://product-matcher-production-21d7.up.railway.app/api' ;
+const API_BASE_URL = 'http://localhost:5000/api' ;
 
 
 const api = axios.create({
