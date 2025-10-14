@@ -32,7 +32,6 @@
 //     .bind("0.0.0.0:5000")?
 //     .run()
 //     .await
-// }
 
 
 mod handlers;
@@ -52,6 +51,8 @@ async fn main() -> io::Result<()> {
         let cors = Cors::default()
             .allowed_origin("http://localhost:3000") // Your frontend URL
             .allowed_origin("http://127.0.0.1:3000")
+            .allowed_origin("https://product-matcher-bqlh.vercel.app")
+            .allowed_origin("https://vercel.com/abhijeett55s-projects/product-matcher-bqlh/FGQXyxwXGzEoeBFzbKUhKXobLSxh")
             .allowed_methods(vec!["GET", "POST", "PUT", "DELETE"])
             .allowed_headers(vec![
                 actix_web::http::header::AUTHORIZATION,
