@@ -34,7 +34,3 @@ A full-stack web application that helps users find visually similar products usi
 
 ---
 
-## 🏗️ Architecture
-
-The application follows a modern microservices architecture:
-
