@@ -1,39 +1,3 @@
-// mod handlers;
-// mod models;
-// mod database;
-// mod utils;
-
-// use actix_cors::Cors;
-// use actix_web::{web, App, HttpServer};
-// use std::io;
-
-// #[actix_web::main]
-// async fn main() -> io::Result<()> {
-//     println!("Starting Visual Product Matcher Backend on http://localhost:5000");
-    
-//     HttpServer::new(|| {
-//         let cors = Cors::default()
-//             .allow_any_origin()
-//             .allow_any_method()
-//             .allow_any_header()
-//             .max_age(3600);
-
-//         App::new()
-//             .wrap(cors)
-//             .app_data(web::Data::new(database::MockDb::new()))
-//             .service(
-//                 web::scope("/api")
-//                     .route("/products", web::get().to(handlers::get_all_products))
-//                     .route("/search", web::post().to(handlers::search_similar_products))
-//                     .route("/products/{id}", web::get().to(handlers::get_product_by_id))
-//                     .route("/health", web::get().to(handlers::health_check)),
-//             )
-//     })
-//     .bind("0.0.0.0:5000")?
-//     .run()
-//     .await
-
-
 mod handlers;
 mod models;
 mod database;

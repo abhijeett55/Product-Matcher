@@ -1,5 +1,6 @@
+
 [build]
-builder = "railway/rust"
+builder = "nixpacks"
 buildCommand = "cd backend-app && cargo build --release"
 
 [deploy]
@@ -11,4 +12,3 @@ healthCheckTimeout = 30
 name = "backend"
 [[services.ports]]
 port = 5000
-protocol = "http"
